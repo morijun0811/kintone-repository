@@ -3,6 +3,7 @@
 //　　　　⇒そのためには取引データを集計アプリ上で特定する必要があるため、ユニークなIDを割り振る必要がある？
 (function(){
   'use srtict';
+  console.log('動作テスト');
   kintone.events.on(['app.record.create.submit.success','app.record.edit.submit.success'], async(event) => {
     const client = new KintoneRestAPIClient();
     for(let key in event.record['テーブル'].value){
